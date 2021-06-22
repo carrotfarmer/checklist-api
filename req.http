@@ -1,0 +1,21 @@
+### get all todos
+GET http://localhost:3000/todos/
+
+### get todo by ID
+GET http://localhost:3000/todos/5/
+
+### create a todo
+POST http://localhost:3000/todos
+Content-Type: application/json
+
+{
+	"taskName": "do the dishes 4",
+	"taskDescription": "do this dishes 5",
+	"isComplete": true
+}
+
+### update a todo
+PUT http://localhost:3000/todos/9
+
+### delete a todo
+DELETE http://localhost:3000/todos/10
