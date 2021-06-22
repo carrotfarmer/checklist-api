@@ -51,6 +51,7 @@ $ yarn test:cov
 ## In Progress
 
 - Writing Unit tests
+- Update todo by ID
 
 ## License
 
