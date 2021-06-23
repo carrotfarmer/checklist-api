@@ -2,7 +2,7 @@
 GET http://localhost:3000/todos/
 
 ### get todo by ID
-GET http://localhost:3000/todos/5/
+GET http://localhost:3000/todos/2/
 
 ### create a todo
 POST http://localhost:3000/todos
@@ -15,7 +15,14 @@ Content-Type: application/json
 }
 
 ### update a todo
-PUT http://localhost:3000/todos/9
+PUT http://localhost:3000/todos/2
+Content-Type: application/json
+
+{
+	"taskName": "wash the car",
+	"taskDescription": "wash the car",
+	"isComplete": false
+}
 
 ### delete a todo
-DELETE http://localhost:3000/todos/10
+DELETE http://localhost:3000/todos/12

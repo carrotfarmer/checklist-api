@@ -31,8 +31,8 @@ export class TodosController {
   }
 
   @Put(':todoId')
-  updateTodo(@Param('todoId') todoId, @Body() updateTodoDto: TodoDto) {
-    return `Update todo by Id - ${todoId}`;
+  updateTodo(@Param('todoId') todoId, @Body() updateTodoDto: Todo) {
+    return this.todosService.updateTodo(todoId, updateTodoDto);
   }
 
   @Delete(':todoId')
